@@ -1,56 +1,59 @@
-$social-primary: #000;
+$social-primary: #745670;
 
 .social {
-    --dp-flex: flex;
-    display: var(--dp-flex);
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 auto;
-    width: 1em;
-    height: 1em;
-    overflow: hidden;
-    background-color: $social-primary;
-    position: relative;
-    transition-duration: $td;
-    
-    //*
-    .icon {   
-        color: #fff;
-        font-size: 0.5em;
+  --dp-flex: flex;
+  display: var(--dp-flex);
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  background-color: $social-primary;
+  position: relative;
+  transition-duration: $td;
+
+  //*
+  .icon {
+    color: #fff;
+    font-size: 0.5em;
+  }
+  &:hover {
+    background-color: #644560;
+  }
+  &--size {
+    font-size: size(33);
+    @include media(lg) {
+      font-size: size(25);
+    }
+  }
+  &--circle {
+    border-radius: 50%;
+  }
+  &--outline {
+    background: none;
+    border: 1px solid $social-primary;
+    .icon {
+      color: $social-primary;
     }
     &:hover {
-        background-color: rgb(43, 43, 43);
+      background-color: $social-primary;
+      .icon {
+        color: #fff;
+      }
     }
-    &--size {
-        font-size: size(40);
-        @include media(lg) {
-            font-size: size(64);
-        }
+  }
+  //*
+  &-group {
+    --dp-flex: flex;
+    display: var(--dp-flex);
+    flex-wrap: wrap;
+    position: relative;
+    & > * {
+      margin-right: size(6.88);
+      @include media(lg) {
+        margin-right: size(5);
+      }
     }
-    &--circle {
-        border-radius: 50%;
-    }
-    &--outline {
-        background: none;
-        border: 1px solid $social-primary;
-        .icon {   
-            color:$social-primary;
-        }
-        &:hover {
-            background-color: $social-primary;
-            .icon {   
-                color: #fff;
-            }
-        }
-    }
-    //*
-    &-group {
-        --dp-flex: flex;
-        display: var(--dp-flex);
-        flex-wrap: wrap;
-        position: relative;
-        & > * {
-            margin-right:size(25);
-        }
-    }
+  }
 }

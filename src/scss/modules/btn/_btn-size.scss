@@ -1,6 +1,10 @@
 .btn--size {
-    &-md {
-        font-size: size(20);
-        padding: size(16) size(32);
+  &-md {
+    width: 100%;
+    font-size: size(14);
+    padding: size(16) size(32);
+    @include media(lg) {
+      width: 22.04%;
     }
+  }
 }
