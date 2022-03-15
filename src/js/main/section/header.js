@@ -11,5 +11,3 @@ headerMenuToggle.addEventListener("click", () => {
 mobileMenuClose.addEventListener("click", () => {
   headerNav.classList.remove("active");
 });
-
-console.log(headerMenuToggle, mobileMenuClose);
