@@ -1,6 +1,74 @@
 <header class="header">
-    <div class="header__container container">
-        <div class="header__logo logo"></div>
-        <button class="header__menu-toggle menu-toggle"><span class="menu-toggle__icon"></span></button>
+  <div class="header__container container">
+    <div class="header__wrapper">
+      <button class="header__menu-toggle menu-toggle">
+        <span class="menu-toggle__icon"></span>
+      </button>
+      <div class="header__logo logo">
+        <picture>
+          <source
+            srcset="images/global/logo_d.png"
+            media="(min-width: 1024px)"
+            type="image/png"
+          />
+          <source
+            srcset="images/global/logo_m.png"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img src="images/global/logo_d.png" alt="Логотип" />
+        </picture>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav-mobile__wrapper">
+          <button class="mobile-menu--close">
+            <span></span>
+            <span></span>
+          </button>
+          <img
+            class="mobile-menu--logo"
+            src="images/global/logo_m.png"
+            alt="Логотип"
+          />
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-list_item">
+            <a class="header__nav-list_item_link" href="/">О нас</a>
+          </li>
+          <li class="header__nav-list_item">
+            <a class="header__nav-list_item_link" href="/"
+              >Условия партнерства</a
+            >
+          </li>
+          <li class="header__nav-list_item">
+            <a class="header__nav-list_item_link" href="/">Стать партнером</a>
+          </li>
+          <li class="header__nav-list_item">
+            <a class="header__nav-list_item_link" href="/">Отзывы</a>
+          </li>
+        </ul>
+        <div class="header__nav-social__wrapper">
+          <button class="btn btn--primary btn--size-md">
+            ОТПРАВИТЬ ЗАЯВКУ
+          </button>
+          <a href="tel:74959259042" class="header__nav-link">7 495 925-90-42</a>
+          <div class="social-group">
+            <a href="#" class="social social--size social--circle"
+              ><svg class="icon">
+                <use xlink:href="svg-sprite/sprite.svg#wats"></use></svg
+            ></a>
+            <a href="#" class="social social--size social--circle"
+              ><svg class="icon">
+                <use xlink:href="svg-sprite/sprite.svg#wb"></use></svg
+            ></a>
+            <a href="#" class="social social--size social--circle"
+              ><svg class="icon">
+                <use xlink:href="svg-sprite/sprite.svg#ig"></use></svg
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <a href="tel:74959259042" class="header__link-mobile">7 495 925-90-42</a>
     </div>
+  </div>
 </header>
