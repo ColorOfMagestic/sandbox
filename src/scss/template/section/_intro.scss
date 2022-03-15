@@ -1,0 +1,52 @@
+.intro {
+  &__title-wrapper {
+    margin-top: size(16);
+    @include media(lg) {
+      width: 46.53%;
+      margin-top: size(67);
+    }
+    .intro__title {
+      text-align: center;
+      @include media(lg) {
+        text-align: left;
+      }
+    }
+    .btn {
+      margin-top: size(15);
+      @include media(lg) {
+        height: size(97);
+        margin-top: size(27.5);
+      }
+    }
+  }
+  &__features {
+    width: 100%;
+    padding: size(40) size(51);
+    color: #fff;
+    margin-top: size(212);
+    background-color: $color-plum;
+    @include media(lg) {
+      padding: size(138) size(78);
+      margin-top: size(152.5);
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include media(md) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      &-item {
+        &:not(:first-child) {
+          margin-top: size(15);
+          @include media(md) {
+            margin-top: size(0);
+          }
+        }
+      }
+    }
+  }
+}
