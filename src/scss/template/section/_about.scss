@@ -3,8 +3,13 @@
   @include media(lg) {
     margin-top: size(90);
   }
-  .about__title {
+
+  &__title {
     color: $color-plum;
+    text-align: center;
+    @include media(lg) {
+      text-align-last: left;
+    }
   }
   &__wrapper {
     margin-top: size(15);
