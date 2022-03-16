@@ -1,0 +1,29 @@
+.about {
+  margin-top: size(30);
+  @include media(lg) {
+    margin-top: size(90);
+  }
+  .about__title {
+    color: $color-plum;
+  }
+  &__wrapper {
+    margin-top: size(15);
+    @include media(lg) {
+      margin-top: size(40);
+    }
+    &-content {
+      .icon {
+        font-size: size(65);
+        @include media(lg) {
+          font-size: size(70);
+        }
+        &__title {
+          margin-top: size(10);
+        }
+        &__text {
+          margin-top: size(10);
+        }
+      }
+    }
+  }
+}
