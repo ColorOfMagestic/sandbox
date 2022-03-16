@@ -1,0 +1,108 @@
+.openning {
+  margin-top: size(30);
+  @include media(lg) {
+    margin-top: size(90);
+  }
+
+  &__title {
+    width: 90%;
+    text-align: center;
+    @include media(lg) {
+      width: 100%;
+      text-align-last: left;
+    }
+
+    color: $color-plum;
+  }
+  &__wrapper {
+    position: relative;
+    grid-gap: 0 size(20);
+    margin-top: size(15);
+    @include media(lg) {
+      margin-top: size(50);
+    }
+
+    @include media(lg) {
+      grid-gap: size(30);
+    }
+
+    .openning__content {
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: size(15) 0;
+        &:not(:last-child) {
+          border-bottom: 1px solid #e7dee5;
+        }
+        @include media(lg) {
+          padding: size(20) 0;
+        }
+        .icon {
+          font-size: size(65);
+          @include media(lg) {
+            font-size: size(70);
+          }
+        }
+        &_text {
+          margin-left: size(15);
+          @include media(lg) {
+            width: 75%;
+
+            margin-left: size(33);
+          }
+        }
+      }
+    }
+    .openning__picture {
+      position: relative;
+      .openning__link {
+        position: absolute;
+        bottom: size(-40);
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 79px;
+        height: 79px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        background-color: $color-plum;
+        transform: translateX(-50%);
+        @include media(md) {
+          bottom: size(-60);
+          width: 135px;
+          height: 135px;
+        }
+        @include media(lg) {
+          left: size(40);
+          bottom: size(-215);
+          width: 275px;
+          height: 275px;
+          border: 25px solid #fff;
+        }
+
+        @include media(hg) {
+          left: size(40);
+          bottom: size(-190);
+          width: 275px;
+          height: 275px;
+          border: 25px solid #fff;
+        }
+        @include media(hd) {
+          left: size(80);
+          bottom: size(-135);
+          width: 275px;
+          height: 275px;
+          border: 25px solid #fff;
+        }
+        .icon {
+          font-size: size(34.35);
+          @include media(lg) {
+            font-size: size(120);
+          }
+        }
+      }
+    }
+  }
+}
