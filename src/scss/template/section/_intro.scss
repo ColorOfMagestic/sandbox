@@ -42,11 +42,11 @@
         position: absolute;
         top: 0;
         left: -20px;
-        width: 120%;
+        width: 112%;
         height: 100%;
         @include media(md) {
           left: -60px;
-          width: 120%;
+          width: 118%;
         }
         @include media(lg) {
           left: 0;
