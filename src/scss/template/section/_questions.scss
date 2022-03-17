@@ -36,6 +36,11 @@
       @include media(lg) {
         position: relative;
         width: 50.94%;
+        height: 500px;
+      }
+      @include media(hd) {
+        position: relative;
+        width: 50.94%;
         height: 688px;
       }
       .questions__form-wrapper_bg-a {
