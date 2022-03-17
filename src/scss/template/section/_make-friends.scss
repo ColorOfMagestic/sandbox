@@ -1,0 +1,97 @@
+.make-friends {
+  margin-top: size(30);
+  @include media(lg) {
+    margin-top: size(99);
+  }
+  &__title {
+    text-align: center;
+    color: $color-plum;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: size(30);
+    @include media(md) {
+      flex-flow: row wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: size(81);
+    }
+    @include media(lg) {
+      flex-flow: row wrap;
+      justify-content: center;
+
+      margin-top: size(81);
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &:not(:last-child) {
+        margin-bottom: size(15);
+      }
+      @include media(md) {
+        width: 48%;
+      }
+      @include media(lg) {
+        width: 22.04%;
+        &:not(:last-child) {
+          margin-bottom: size(58);
+        }
+        margin-bottom: size(58);
+        &:not(:nth-child(4n + 1)) {
+          margin-left: size(30);
+        }
+      }
+      .icon_wrapper {
+        position: relative;
+        .icon {
+          font-size: size(105);
+          @include media(lg) {
+            width: 105px;
+            height: 105px;
+          }
+        }
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 31px;
+          height: 31px;
+          border-radius: 50%;
+          font-size: size(20);
+          background-color: $color-plum;
+          color: #fff;
+          @include media(md) {
+            left: 10%;
+          }
+          @include media(lg) {
+            top: -6%;
+            left: -2%;
+          }
+          @include media(hd) {
+            top: 0;
+            left: 10%;
+          }
+        }
+        @include media(lg) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+        }
+      }
+      &_text {
+        margin-top: size(30);
+        font-size: size(18);
+        text-align: center;
+      }
+    }
+  }
+}
