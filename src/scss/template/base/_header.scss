@@ -122,9 +122,9 @@
             text-align: center;
             color: currentColor;
             font-size: size(18);
+            font-weight: bold;
             @include media(lg) {
               font-size: size(16);
-              font-weight: bold;
             }
           }
           .social-group {
