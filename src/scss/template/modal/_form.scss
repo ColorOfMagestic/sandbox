@@ -1,29 +1,106 @@
 .modal-form {
+  position: relative;
+  background-color: #fff;
+  @include media(lg) {
+    background-color: transparent;
+  }
+  &__box {
+    margin: auto;
     position: relative;
-    background-color: #fff; 
+    padding: 0;
+  }
+  &__wrapper {
+    background-color: $color-plum;
+    max-width: size(470);
+    padding: size(48) size(25);
     @include media(lg) {
-        background-color: transparent;
+      border-radius: size(4);
+      padding: size(52);
     }
-    &__box {
-        margin: auto;
-        position: relative;
-        padding: 0;
+    p {
+      margin-top: size(23);
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      @include media(lg) {
+        margin-top: size(11);
+      }
     }
-    &__wrapper {
-        background-color: #fff;
-        max-width: size(600);
-        padding: size(50) size(15);
-        @include media(lg) {
-            padding: size(50) size(75);
+    .form {
+      margin-top: size(31);
+      @include media(lg) {
+        margin-top: size(27);
+      }
+      .form-send {
+        .form-field {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80px;
+          &:not(:last-child) {
+            margin-bottom: size(14);
+            @include media(lg) {
+              margin-bottom: size(14);
+            }
+          }
+          .icon {
+            position: absolute;
+            left: size(5);
+            font-size: size(35);
+            @include media(lg) {
+              left: size(17);
+            }
+          }
         }
+        &__btn {
+          height: size(80);
+        }
+        &__check {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: size(15);
+          font-size: size(10);
+          .check-box {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+          }
+          .check-style {
+            position: relative;
+            display: block;
+            width: size(16);
+            height: size(16);
+            border: 1px solid #fde989;
+            margin-right: size(7);
+          }
+          span {
+            margin-left: size(3);
+            color: $color-primary;
+          }
+        }
+        .check-box:checked + .check-style::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          content: url(../images/questions/ok.svg);
+          transform: translate(-50%, -50%);
+        }
+      }
     }
-    &__close {
-        position: absolute;
-        right: size(15);
-        top: size(30);
+  }
+  &__close {
+    position: absolute;
+    right: size(16);
+    top: size(28);
+    font-size: size(24);
 
-        @include media(lg) {
-            right: size(30);
-        }
+    @include media(lg) {
+      font-size: size(46);
+      top: size(17);
+      right: size(10);
     }
+  }
 }
