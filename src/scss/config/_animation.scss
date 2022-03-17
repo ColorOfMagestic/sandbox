@@ -10,26 +10,26 @@
 
 $animation: (
   "fadeIn": (
-    active: active,
+    active: true,
     bp: (
       "default",
       "lg",
     ),
   ),
   "fadeInUp": (
-    active: active,
+    active: true,
     bp: (
       "default",
     ),
   ),
   "fadeInDown": (
-    active: active,
+    active: true,
     bp: (
       "default",
     ),
   ),
   "fadeInLeft": (
-    active: active,
+    active: true,
     bp: (
       "default",
     ),
@@ -41,7 +41,7 @@ $animation: (
     ),
   ),
   "fadeInLeftTop": (
-    active: false,
+    active: true,
     bp: (
       "default",
     ),
@@ -65,25 +65,25 @@ $animation: (
     ),
   ),
   "buzz-out": (
-    active: false,
+    active: true,
     bp: (
       "default",
     ),
   ),
   "orbit": (
-    active: false,
+    active: true,
     bp: (
       "default",
     ),
   ),
   "slideInUp": (
-    active: active,
+    active: true,
     bp: (
       "default",
     ),
   ),
   "slideInDown": (
-    active: active,
+    active: true,
     bp: (
       "default",
     ),
