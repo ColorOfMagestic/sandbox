@@ -1,0 +1,96 @@
+<section id="questions" class="questions">
+  <div class="container">
+    <div class="questions__wrapper">
+      <div class="questions__title-wrapper">
+        <h2 class="questions__title-wrapper_title title title--size-lg">
+          Остались вопросы? Нужно коммерческое предложение?
+        </h2>
+        <p class="questions__title-wrapper_text">
+          Заполните форму и мы с вами свяжемся
+        </p>
+      </div>
+      <div class="questions__form-wrapper_bg">
+        <div class="questions__form-wrapper_bg-a">
+          <div class="questions__form-wrapper">
+            <p class="questions__form-wrapper_text">
+              Заполните форму <br />
+              и мы с вами свяжемся
+            </p>
+            <form id="" class="form js-form">
+              <input
+                class="form-input-title"
+                type="hidden"
+                name="form-title"
+                value=""
+              />
+              <div class="form-send">
+                <div class="form-send__message">
+                  <div class="form-send__loading"><span></span></div>
+                  <p class="form-send__success">
+                    Спасибо, ваша заявка принята. Менеджер свяжется с вами в
+                    ближайшее время
+                  </p>
+                  <p class="form-send__error">
+                    Что-то пошло не так. Заявка не отправлена.
+                  </p>
+                </div>
+                <label class="form-field">
+                  <svg class="icon">
+                    <use xlink:href="svg-sprite/sprite.svg#user"></use>
+                  </svg>
+                  <input
+                    class="form-field__input"
+                    placeholder="Введите ваше имя"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                  <span class="form-field__text">Введите ваше имя</span>
+                </label>
+                <label class="form-field">
+                  <svg class="icon">
+                    <use xlink:href="svg-sprite/sprite.svg#phone"></use>
+                  </svg>
+                  <input
+                    class="form-field__input form-phone"
+                    placeholder="phone"
+                    type="tel"
+                    name="phone"
+                    required
+                  />
+                  <span class="form-field__text">Введите ваш телефон</span>
+                </label>
+                <label class="form-field">
+                  <svg class="icon">
+                    <use xlink:href="svg-sprite/sprite.svg#mail"></use>
+                  </svg>
+                  <input
+                    class="form-field__input"
+                    placeholder="email"
+                    type="email"
+                    name="email"
+                  />
+                  <span class="form-field__text">Введите вашу почту</span>
+                  <span class="form-field__email"
+                    >Пожалуйста, введите адрес электронной почты.</span
+                  >
+                </label>
+                <button
+                  type="submit"
+                  class="form-send__btn btn btn--primary btn--size-md"
+                >
+                  ОТПРАВИТЬ ЗАЯВКУ
+                </button>
+                <label class="form-send__check">
+                  <input class="check-box" type="checkbox" />
+                  <span class="check-style"></span>
+                  Я согласен с <span>политикой конфиденциальности</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
