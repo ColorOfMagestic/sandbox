@@ -1,0 +1,95 @@
+.feedback {
+  position: relative;
+  margin-top: size(30);
+  @include media(lg) {
+    margin-top: size(32);
+  }
+  &__title {
+    color: $color-plum;
+    text-align: center;
+  }
+  .feedback-swiper {
+    margin-top: size(30);
+    @include media(lg) {
+      margin-top: size(50);
+    }
+    .swiper-slide {
+      .wrapper {
+        @include media(lg) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &_picture {
+          width: 83.1%;
+          margin: 0 auto;
+          @include media(lg) {
+            width: 46.2%;
+            margin: 0;
+          }
+        }
+        &-feedback {
+          position: relative;
+          padding: size(15) size(12);
+          margin-top: size(-20);
+          background-color: #fed460;
+          z-index: 2;
+          @include media(lg) {
+            width: 54.69%;
+            padding: size(54) size(38);
+            margin-top: size(0);
+            margin-left: size(-66);
+          }
+          .icon {
+            width: 40px;
+            height: 29px;
+            @include media(md) {
+              width: 72px;
+              height: 52px;
+            }
+          }
+          &_title {
+            margin-top: size(12);
+            @include media(lg) {
+              margin-top: size(20);
+            }
+            font-weight: bold;
+          }
+          &_text {
+            margin-top: size(5);
+            line-height: 1.63;
+          }
+        }
+      }
+    }
+  }
+  .swiper-button-group {
+    margin: size(10) 0;
+    justify-content: center;
+    @include media(lg) {
+      position: absolute;
+      bottom: 40%;
+      width: 100%;
+      z-index: 2;
+      justify-content: space-between;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: relative;
+      background-color: $color-plum;
+      .icon {
+        font-size: size(28.9);
+      }
+    }
+    .swiper-button-prev {
+      @include media(lg) {
+        left: size(340);
+      }
+    }
+    .swiper-button-next {
+      @include media(lg) {
+        right: size(340);
+      }
+    }
+  }
+}
