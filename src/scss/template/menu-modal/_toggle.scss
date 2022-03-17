@@ -2,7 +2,7 @@
 $menu-toggle-width: 24;
 $menu-toggle-height: 24;
 //* Толщина линий
-$menu-toggle-icon-line-height: 1.5;
+$menu-toggle-icon-line-height: 2;
 //* Ширина
 $menu-toggle-icon-top-width: 15;
 $menu-toggle-icon-center-width: 18;
@@ -71,7 +71,7 @@ $menu-toggle-icon-indent: 5;
     &:before {
       content: "";
       position: absolute;
-      background-color: currentColor;
+      background-color: #745670;
       @if ($menu-toggle-icon-direction == left) {
         left: 0;
       } @else if ($menu-toggle-icon-direction == right) {
