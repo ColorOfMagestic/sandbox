@@ -97,6 +97,7 @@
           border: 25px solid #fff;
         }
         .icon {
+          animation: shakeY 8s infinite;
           font-size: size(34.35);
           @include media(lg) {
             font-size: size(120);
